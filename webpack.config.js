@@ -1,5 +1,7 @@
 const path = require('path')
 
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 // esm - import, export (es6)
 
 /**
@@ -29,4 +31,15 @@ module.exports = {
   resolve: {
     extensions: ['.js'],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+      filename: './index.html',
+    })
+  ],
+  devServer: {
+    contentBase: path.resolve(__dirname, 'dist'),
+    hot: true,
+    open: true,
+  }, 
 }
