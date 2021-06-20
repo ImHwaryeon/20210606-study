@@ -7,9 +7,10 @@
     "build": "webpack --mode=production",
     "dev": "webpack serve --mode=development",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch" : "jest --watch",
+    "dev:api" : "json-server --watch db.json --port=3333"
   },
-  "author": "",
+  "author": "", 
   "license": "ISC",
   "dependencies": {
     "react": "^17.0.2",
@@ -20,6 +21,7 @@
     "@babel/preset-env": "^7.14.4",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
     "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
@@ -30,7 +32,11 @@
     "eslint-plugin-standard": "^5.0.0",
     "html-webpack-plugin": "^5.3.1",
     "jest": "^27.0.4",
+    "json-server": "^0.16.3",
+    "mini-css-extract-plugin": "^1.6.0",
     "prettier": "^2.3.1",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
