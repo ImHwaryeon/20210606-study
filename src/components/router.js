@@ -24,7 +24,11 @@ class Router {
     const Component = this.routes[path]
 
     if (Component) {
-      new Component()
+      new Component({
+        router: {
+          push: this.push,
+        },
+      })
     } else {
       const ErrorComponent = this.routes['/error']
       new ErrorComponent()
