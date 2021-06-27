@@ -1,10 +1,7 @@
 class MainPage {
-	constructor() {
+  constructor() {}
 
-	}
-	render(h) {
-		
-	}
+  render() {}
 }
 
 export default MainPage

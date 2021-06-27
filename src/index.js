@@ -7,17 +7,16 @@ import ErrorPage from './pages/error'
 import './scss/reset.scss'
 
 const ROUTES = {
-	'/': MainPage,
-	'/signin': SigninPage,
-	'/error': ErrorPage,
+  '/': MainPage,
+  '/signin': SigninPage,
+  '/error': ErrorPage,
 }
-
 
 // 컴포넌트들의 루트
 class App {
-	constructor() {
-		this.router = new Router(ROUTES)
-	}
+  constructor() {
+    this.router = new Router(ROUTES)
+  }
 }
 
 new App()
