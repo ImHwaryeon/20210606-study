@@ -13,6 +13,9 @@ class Router {
     }
   }
 
+  // # /
+  // push('/sigin') or push('/') => #sign, #
+  // hash 값이 바뀌면서 onhashchange 동작
   push(pathname) {
     window.location.hash = pathname.replace('/', '#')
   }
@@ -21,6 +24,7 @@ class Router {
   render() {
     // #main => /main
     const path = window.location.hash.replace('#', '/') || '/'
+    // 페이지들
     const Component = this.routes[path]
 
     if (Component) {

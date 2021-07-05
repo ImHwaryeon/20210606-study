@@ -2,7 +2,6 @@ import './signin.scss'
 
 class SigninPage {
   constructor(props) {
-    console.log(props)
     this.root = document.getElementById('app')
     this.props = props
 
@@ -41,7 +40,6 @@ class SigninPage {
         if (response.ok) {
           // 응답값에서 실제 사용할 데이터로 변환하는 작업
           const users = await response.json()
-
           // 받아온 유저 목록이랑 비교를해서 같은 이메일을 가진 애가 있는지
           const user = users.find((user) => user.email === emailEl.value)
 
@@ -58,8 +56,6 @@ class SigninPage {
 
           window.localStorage.setItem('user', JSON.stringify(user))
           this.props.router.push('/')
-
-          // 로그인성공했으면 메인페이지로 이동한다.
         }
       })
   }

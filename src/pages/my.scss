@@ -1,0 +1,38 @@
+.wrap_profile {
+	margin: 16px;
+	display: flex;
+
+ .thumbnail {
+		 width: 77px;
+		 height: 77px;
+		 object-fit: cover;
+		 border-radius: 50%;
+		 margin-right: 28px;
+ }   
+
+ .wrap_info {
+		 width: 100%;
+
+		 .name {
+			 display: block;
+			 overflow: hidden;
+			 text-overflow: ellipsis;
+			 white-space: nowrap;
+			 font-size: 28px;
+			 line-height: 32px;
+			 margin-bottom: 12px;
+		 }
+		 .btn_logout {
+			 width: 100%;
+			 background-color: transparent;
+			 border: 1px solid #dbdbdb;
+			 color: #262626;
+			 cursor: pointer;
+			 display: block;
+			 font-weight: 600;
+			 padding: 5px 9px;
+			 text-align: center;
+			 border-radius: 4px;
+		 }
+ }
+}
